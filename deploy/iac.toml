@@ -1,0 +1,33 @@
+# Orquestrador de deploy — página pessoal React/Vite no RKE2/Rancher.
+# Painel: https://rancher.orzyon.ai/dashboard/c/local/explorer/apps.deployment
+
+[remote]
+# Este é o acesso SSH ao nó RKE2, não o DNS público nem a URL do Rancher.
+host    = "fda2:67cd:dd48:1100::100"
+user    = "gabrielsousa"
+port    = 22
+identity = "~/.ssh/id_ed25519"
+workdir = "/tmp/iac-matheussousaorzyonai"
+
+[k8s]
+namespace       = "matheussousaorzyonai"
+deployment      = "matheussousaorzyonai"
+container       = "matheussousaorzyonai-web"
+ingress_host    = "matheussousa.orzyon.ai"
+ingress_hosts   = ["matheussousa.orzyon.ai"]
+rollout_timeout = 180
+verify_paths    = ["/", "/healthz"]
+verify_tries    = 3
+verify_contains = "Matheus Sousa"
+
+[build]
+mode       = "artifact"
+command    = ["npm", "run", "build"]
+dist       = "dist"
+dockerfile = "deploy/Dockerfile.runtime"
+nginx_conf = "deploy/nginx.conf"
+
+[image]
+repository    = "local/matheussousaorzyonai-frontend"
+keep          = 5
+containerd_ns = "k8s.io"

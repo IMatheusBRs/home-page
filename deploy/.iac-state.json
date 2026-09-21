@@ -1,0 +1,84 @@
+{
+  "history": [
+    {
+      "at": "2026-09-17T22:00:42-03:00",
+      "tag": "20260917-220039-304b038a",
+      "image": "local/orzyon-frontend:20260917-220039-304b038a",
+      "digest": "304b038ab2073a7f5df9a2e91bee51ff7db7ad53065101dab00dafe67aaa10c4",
+      "namespace": "orzyon",
+      "deployment": "orzyon"
+    },
+    {
+      "at": "2026-09-17T22:06:56-03:00",
+      "tag": "20260917-220643-304b038a",
+      "image": "local/orzyon-frontend:20260917-220643-304b038a",
+      "digest": "304b038ab2073a7f5df9a2e91bee51ff7db7ad53065101dab00dafe67aaa10c4",
+      "namespace": "orzyon",
+      "deployment": "orzyon"
+    },
+    {
+      "at": "2026-09-18T00:16:07-03:00",
+      "tag": "20260918-001553-b53d1aff",
+      "image": "local/orzyon-frontend:20260918-001553-b53d1aff",
+      "digest": "b53d1affe4e3e473db023e01e92c9035e23e96ce95e30181b6a26ce1e580a286",
+      "namespace": "orzyon",
+      "deployment": "orzyon"
+    },
+    {
+      "at": "2026-09-18T00:52:08-03:00",
+      "tag": "20260918-005155-19754d8d",
+      "image": "local/gabrielsousaorzyonai-frontend:20260918-005155-19754d8d",
+      "digest": "19754d8dfeff429ae4d194dc4ccfe18d4d1b25dfe45f22196d05baea49687953",
+      "namespace": "gabrielsousaorzyonai",
+      "deployment": "gabrielsousaorzyonai"
+    },
+    {
+      "at": "2026-09-18T01:05:21-03:00",
+      "tag": "20260918-010508-062ef36b",
+      "image": "local/gabrielsousaorzyonai-frontend:20260918-010508-062ef36b",
+      "digest": "062ef36b85516b1b556216bff57d1116b2ec5a329ade604ab0ec4d1108a6f121",
+      "namespace": "gabrielsousaorzyonai",
+      "deployment": "gabrielsousaorzyonai"
+    },
+    {
+      "at": "2026-09-18T11:52:28-03:00",
+      "tag": "20260918-115215-ce74ca3b",
+      "image": "local/gabrielsousaorzyonai-frontend:20260918-115215-ce74ca3b",
+      "digest": "ce74ca3b72795a38cf555c5c11e38609bf4f7a105536b154d65c0803890b6d86",
+      "namespace": "gabrielsousaorzyonai",
+      "deployment": "gabrielsousaorzyonai"
+    },
+    {
+      "at": "2026-09-18T16:30:03-03:00",
+      "tag": "20260918-162950-ce74ca3b",
+      "image": "local/gabrielsousaorzyonai-frontend:20260918-162950-ce74ca3b",
+      "digest": "ce74ca3b72795a38cf555c5c11e38609bf4f7a105536b154d65c0803890b6d86",
+      "namespace": "gabrielsousaorzyonai",
+      "deployment": "gabrielsousaorzyonai"
+    },
+    {
+      "at": "2026-09-18T16:45:43-03:00",
+      "tag": "20260918-164531-8eba88ac",
+      "image": "local/gabrielsousaorzyonai-frontend:20260918-164531-8eba88ac",
+      "digest": "8eba88ac604c8aaaf09fab20ed31ad9fbe6417fd53dcb5ec3fad056d519a4883",
+      "namespace": "gabrielsousaorzyonai",
+      "deployment": "gabrielsousaorzyonai"
+    },
+    {
+      "at": "2026-09-18T18:54:44-03:00",
+      "tag": "20260918-185431-8eba88ac",
+      "image": "local/gabrielsousaorzyonai-frontend:20260918-185431-8eba88ac",
+      "digest": "8eba88ac604c8aaaf09fab20ed31ad9fbe6417fd53dcb5ec3fad056d519a4883",
+      "namespace": "gabrielsousaorzyonai",
+      "deployment": "gabrielsousaorzyonai"
+    },
+    {
+      "at": "2026-09-21T20:11:16-03:00",
+      "tag": "20260921-201102-24f2a142",
+      "image": "local/matheussousaorzyonai-frontend:20260921-201102-24f2a142",
+      "digest": "24f2a142192546c838d53862e33065b36e82435363da992bd74212387c70e927",
+      "namespace": "matheussousaorzyonai",
+      "deployment": "matheussousaorzyonai"
+    }
+  ]
+}

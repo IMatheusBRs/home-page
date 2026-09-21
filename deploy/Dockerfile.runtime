@@ -1,0 +1,19 @@
+# Modo "artifact": o build do React/Vite acontece no seu PC e este estágio
+# empacota somente o conteúdo estático gerado em dist/.
+FROM nginx:1.27-alpine
+
+# Limpar o html da imagem base. Sem isso, se o build nao gerar um arquivo de
+# mesmo nome (ex.: site com rotas so sob /pt, /en, /es nao gera index.html na
+# raiz), o "Welcome to nginx!" sobrevive ao COPY e vai para producao.
+RUN rm -f /etc/nginx/conf.d/default.conf && rm -rf /usr/share/nginx/html/*
+COPY nginx.conf /etc/nginx/conf.d/app.conf
+COPY browser/ /usr/share/nginx/html/
+
+# Falha o build se a config for inválida. Sem isso, um erro de sintaxe só
+# aparece como CrashLoopBackOff depois do deploy, e o rollout trava.
+RUN nginx -t
+
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s \
+  CMD wget -qO- http://127.0.0.1/healthz >/dev/null || exit 1
+
+EXPOSE 80

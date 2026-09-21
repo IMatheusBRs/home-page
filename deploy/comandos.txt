@@ -1,0 +1,9 @@
+python3 iac.py doctor
+
+python3 iac.py setup-sudo
+
+python3 iac.py doctor
+
+python3 iac.py status
+
+python3 iac.py deploy --force
